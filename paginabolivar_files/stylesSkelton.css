@@ -1,0 +1,110 @@
+#skheader {
+  position: absolute;
+  width: 100%;
+}
+#skbanner{
+  position: absolute;
+  width: 100%;
+  top: 110px;
+}
+#skquick{
+  position: absolute;
+  width: 100%;
+  top: 530px;
+
+}
+@media (max-width: 640px) {
+  #skbanner{
+    top:162px;
+  }
+  #skquick{
+    top:662px;
+  }
+}
+
+.skh{
+  height: 38px;
+  background: linear-gradient(90deg, #B9B9B9 25%, white 50%, #B9B9B9 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+.sktab{
+  width: 108px;
+  height: 28px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  top: 10px;
+  left: 10px;
+  position: relative;
+  background-color: white;
+  color: white;
+}
+.sksearch{
+  height: 72px;
+  @media (max-width: 640px) {
+    height: 124px;
+  }
+}
+
+.skb{
+  background: linear-gradient(90deg, #E1E1E1 25%, white 50%, #E1E1E1 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+  height: 420px;
+  @media (max-width: 640px){
+    height: 500px;
+  }
+}
+.skbullets{
+  width: 120px;
+  height: 32px;
+  background-color: #B9B9B9;
+  border-radius: 100px;
+  margin: auto;
+  top: 87%;
+  position: relative;
+  padding: 8px;
+  display: flex;
+  gap: 26px;
+}
+.skbullet{
+  background-color: #E1E1E1;
+  height: 16px;
+  width: 16px;
+  border-radius: 20px;
+}
+.skq{
+  background: linear-gradient(90deg, #F5F5F5 25%, white 50%, #F5F5F5 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+  height: 104px;
+}
+
+.buttonQ{
+  width: 152px;
+    height: 40px;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: #e1e1e1;
+    background: white;
+    margin: 8px;
+    border-color: #E1E1E1;
+    border-width: 1px;
+}
+.buttonsQ{
+  margin: auto;
+  width: 90%;
+  position: relative;
+  top: 25%;
+  display: flex;
+  justify-content: space-between; 
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
